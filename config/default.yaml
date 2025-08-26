@@ -1,1 +1,25 @@
+text:
+  model_name: "j-hartmann/emotion-english-distilroberta-base"
+  max_length: 512
 
+audio:
+  model_name: "ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition"
+  sample_rate: 16000
+
+image:
+  model_name: "trpakov/vit-face-expression"
+  image_size: 224
+
+fusion_weights:
+  text: 0.4
+  audio: 0.3
+  image: 0.3
+
+emotions:
+  - anger
+  - disgust
+  - fear
+  - joy
+  - sadness
+  - surprise
+  - neutral
